@@ -55,7 +55,7 @@ public class Manager {
         return result;
     }
 
-    public static Ciutada addCiutada(String nom, String cognom, int edat, long ciutatId){
+    public static Ciutada addCiutada(long ciutatId, String nom, String cognom, int edat ){
         Session session = factory.openSession();
         Transaction tx = null;
         Ciutada result = null;
