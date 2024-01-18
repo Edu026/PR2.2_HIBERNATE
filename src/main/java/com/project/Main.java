@@ -52,9 +52,9 @@ public class Main {
       }
      
      
-       Manager.delete(Ciutada.class, pep1.getCiutadaId());
-       Manager.delete(Ciutada.class, pep3.getCiutadaId());
-       Manager.delete(Ciutada.class, pep5.getCiutadaId());
+       Manager.delete(Ciutada.class, pep1.getId());
+       Manager.delete(Ciutada.class, pep3.getId());
+       Manager.delete(Ciutada.class, pep5.getId());
        Manager.delete(Ciutat.class, ciu1.getCiutatId());
      
      

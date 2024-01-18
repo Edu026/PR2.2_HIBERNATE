@@ -14,6 +14,8 @@ public class Ciutat implements Serializable {
 
       private int codiPostal;
 
+      private Set<Ciutada> ciutadans;
+
       public Ciutat() {}
     
       public Ciutat(String nom, String pais, int codiPostal) {
@@ -54,9 +56,17 @@ public class Ciutat implements Serializable {
          this.codiPostal = codiPostal;
       }
 
+      public Set<Ciutada> getCiutadans() {
+          return ciutadans;
+      }
+
+      public void setCiutadans(Set<Ciutada> ciutadans) {
+          this.ciutadans = ciutadans;
+      }
+
       @Override
       public String toString() {
-          return "Id: " + this.getCiutatId() + " Nom: " + this.getNom() + " Pais: " + this.getPais() + " CodiPostal: " + this.getCodiPostal();
+          return this.getNom() + ", " + this.getPais() + " " + this.getCodiPostal();
       }
 
  }

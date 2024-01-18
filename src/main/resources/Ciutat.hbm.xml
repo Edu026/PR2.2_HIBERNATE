@@ -3,15 +3,18 @@
 <hibernate-mapping>
    <class name = "com.project.Ciutat" table = "Ciutat">
         <meta attribute = "class-description">
-            This class contains the Cart detail. 
+            This class contains the Ciutat detail. 
         </meta>
         <id name = "ciutatId" type = "long" column = "ciutatId">
             <generator class="native"/>
         </id>
-        <property name = "type" column = "type" type = "string"/>
-        <set name="items" cascade="all">
-            <key column="cartId"/>
-            <one-to-many class="com.project.Item"/>
+        <property name = "nom" column = "nom" type = "string"/>
+        <property name = "pais" column = "pais" type = "string"/>
+        <property name = "codiPostal" column = "codiPostal" type = "int"/>
+        
+        <set name="ciutadans" cascade="all">
+            <key column="ciutatId"/>
+            <one-to-many class="com.project.Ciutada"/>
         </set>
    </class>
 </hibernate-mapping>
