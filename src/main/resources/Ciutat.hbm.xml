@@ -11,10 +11,6 @@
         <property name = "nom" column = "nom" type = "string"/>
         <property name = "pais" column = "pais" type = "string"/>
         <property name = "codiPostal" column = "codiPostal" type = "int"/>
-        
-        <set name="ciutadans" cascade="all">
-            <key column="ciutatId"/>
-            <one-to-many class="com.project.Ciutada"/>
-        </set>
+
    </class>
 </hibernate-mapping>

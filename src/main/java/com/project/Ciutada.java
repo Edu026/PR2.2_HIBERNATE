@@ -9,15 +9,6 @@ public class Ciutada implements Serializable {
 	private String nom;
     private String cognom;
 	private int edat;
-	private Ciutat ciutat;
-
-	/*
-	long id
-	long ciutatId
-	String nom
-	String cognom
-	int edat
- */
 
 	public Ciutada() { }
 
@@ -69,16 +60,10 @@ public class Ciutada implements Serializable {
 		this.edat = edat;
 	}
 
-	public Ciutat getCiutat() {
-		return ciutat;
-	}
 
-	public void setCiutat(Ciutat ciutat) {
-		this.ciutat = ciutat;
-	}
 
 	@Override
     public String toString () {
-      	return this.getNom() + " " + this.getCognom() + " " + this.getEdat() + " - " + getCiutatId();
+      	return this.getNom() + " " + this.getCognom() + ", " + this.getEdat() + " - " + getCiutatId();
     }
 }

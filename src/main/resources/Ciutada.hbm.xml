@@ -11,8 +11,8 @@
         <property name = "nom" column = "nom" type = "string"/>
         <property name = "cognom" column = "cognom" type = "string"/>
         <property name = "edat" column = "edat" type = "int"/>
-        <many-to-one name="ciutat" class="com.project.Ciutat" fetch="select">
-            <column name="ciutatId" not-null="false" />
-        </many-to-one>   
+        <property name = "ciutatId" column = "ciutatId" type = "long"/>
+
+ 
     </class>
 </hibernate-mapping>

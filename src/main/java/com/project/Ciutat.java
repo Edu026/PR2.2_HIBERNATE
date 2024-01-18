@@ -1,8 +1,6 @@
 package com.project;
 
 import java.io.Serializable;
-import java.util.List;
-import java.util.Set;
 
 public class Ciutat implements Serializable {
     
@@ -14,7 +12,6 @@ public class Ciutat implements Serializable {
 
       private int codiPostal;
 
-      private Set<Ciutada> ciutadans;
 
       public Ciutat() {}
     
@@ -56,13 +53,6 @@ public class Ciutat implements Serializable {
          this.codiPostal = codiPostal;
       }
 
-      public Set<Ciutada> getCiutadans() {
-          return ciutadans;
-      }
-
-      public void setCiutadans(Set<Ciutada> ciutadans) {
-          this.ciutadans = ciutadans;
-      }
 
       @Override
       public String toString() {
